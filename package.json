@@ -1,0 +1,29 @@
+{
+  "name": "stupid_simple_single_page_app_shell",
+  "version": "0.0.0",
+  "description": "Fastest way to get a locally hosted webserver up and running for developing a single page app. Must have Node/NPM installed.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Single",
+    "Page",
+    "App",
+    "SPA",
+    "Node",
+    "NPM",
+    "Project",
+    "Shell",
+    "Stupid",
+    "Simple",
+    "Template",
+    "development"
+  ],
+  "author": "Alexander Nied",
+  "license": "None",
+  "devDependencies": {
+    "express": "~4.13.3",
+    "colors": "~1.1.2"
+  }
+}
