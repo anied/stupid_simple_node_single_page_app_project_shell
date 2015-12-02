@@ -13,9 +13,8 @@ single_page_app.use(express.static(webroot));
 //Based on solution at:
 //https://ninja.sg/spa-router-fallback/
 single_page_app.get('*',function (req, res, next) {
-	console.log('middleware firing');
 	if (req.accepts('html')) {
-		console.log(('--Redirecting request to approot--').yellow);
+		console.log(('Redirecting request ').yellow + (req.url).magenta + (' to approot').yellow);
 		res.sendFile(approot);
 	} else {
 		next();
@@ -30,4 +29,5 @@ single_page_app.listen(config.port, function () {
 	console.log(''); // Is it the smartest way to do a newline?  No.  But it's easier to parse visually than a '\n' at the end of every line where I want it
 	console.log(('Your approot (the html file that all non-template paths will be redirected back to) is:').green);
 	console.log((approot).magenta);
+	console.log(''); // Is it the smartest way to do a newline?  No.  But it's easier to parse visually than a '\n' at the end of every line where I want it
 });
