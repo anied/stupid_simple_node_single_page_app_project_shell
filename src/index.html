@@ -6,7 +6,13 @@
 </head>
 <body>
 	<h1>Hello world!</h1>
+	<p><b><span class="red">CSS</span> <span class="orange">files</span> <span class="yellow">are</span> <span class="green">loading</span> <span class="blue">as</span> <span class="purple">expected!</span></b></p>
 	<div id="templateTarget"></div>
+	<p>Any path will redirect back to this HTML file (set as "approot" in the config/settings.json file in this project).  Check it out:</p>
+	<p><a href="/somePath">/somePath</a></p>
+	<p><a href="some/other/path">some/other/path</a></p>
+	<p>If you were utilizing an MV* library like <a href="http://backbonejs.org/" target="_blank">Backbone</a>, <a href="https://angularjs.org/" target="_blank">AngularJS</a>, <a href="https://facebook.github.io/react/" target="_blank">React</a>, <a href="http://emberjs.com/" target="_blank">Ember</a>, or whatever, you could capture those routes and display the proper content, regardless of where the user entered from-- if they bookmarked <a href="some/specific/application/route">some/specific/application/route</a>, they would still get the approot, which could then load up and handle the route appropriately.</p>
+	<p>For more information, checkout the project on Github.</p>
 	<script src="/js/script.js"></script>
 </body>
 </html>
